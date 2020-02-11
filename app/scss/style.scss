@@ -2,7 +2,7 @@
 @import 'global';
 @import 'fonts';
 
-
+// start header
 
 .header__top-inner {
     display: flex;
@@ -53,8 +53,11 @@
     }
 }
 
+// end header
 
-.serch {
+// start search
+
+.search {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -111,10 +114,70 @@
             }
         }
 }
-.search__inner-title {
+
+
+// end search
+
+// start product
+
+.products {
+    padding: 110px 0px;
+    background-color: $grey;
+}
+
+.products__title {
 
 }
-.search__inner-text {
+.products__inner {
 }
-.search__inner-form {
+.products__inner-btn {
+    text-align: center;
+    margin-bottom: 60px;
+    button{
+        padding: 12px 21px;
+        border: none;
+        background-color: #fff;
+        color: $bg;
+        cursor: pointer;
+        & + button{
+            margin-left: 5px;
+        }
+    }
+
+
 }
+.products__inner-box {
+}
+.products__item {
+    max-width: 442px;
+    width: 100%;
+
+    &-img {
+        min-height: 250px;
+        background-repeat: no-repeat;
+        display: block;
+        background-size: cover;
+        background-position: center;
+
+    }
+}
+
+.products__item-content {
+}
+.product__item-name {
+}
+.product__item-title {
+}
+.product__item-category {
+}
+.product__item-price {
+}
+.product__item-info {
+}
+.product__item-author {
+}
+.product__item-star {
+}
+
+
+// end product
