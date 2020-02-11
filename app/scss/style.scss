@@ -125,11 +125,7 @@
     background-color: $grey;
 }
 
-.products__title {
 
-}
-.products__inner {
-}
 .products__inner-btn {
     text-align: center;
     margin-bottom: 60px;
@@ -139,18 +135,29 @@
         background-color: #fff;
         color: $bg;
         cursor: pointer;
+        
         & + button{
             margin-left: 5px;
         }
+        &.mixitup-control-active{
+            background-color: $red;
+            color: #fff;
+            outline: none;
+        }
     }
-
-
 }
-.products__inner-box {
+
+.products__inner-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 .products__item {
     max-width: 442px;
     width: 100%;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    margin-bottom: 30px;
 
     &-img {
         min-height: 250px;
@@ -160,24 +167,79 @@
         background-position: center;
 
     }
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        align-items: center;
+        min-height: 90px;
+        font-weight: 500;
+        border-bottom: 1px solid #e7ecf2;
+        
+    }
+    &-name{
+        max-width: 310px;
+    }
+    &-title{
+        color: $bg;
+        font-size: 18px;
+        display: block;
+    }
+    &-category{
+        font-size: 14px;
+        color: $green;
+        display: block;
+    }
+    &-price{
+        font-size: 20px;
+        color: $bg;
+        font-weight: 700;
+    }
+    &-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 10px 30px;
+    }
+    &-author{
+        display: flex;
+        align-items: center;
+        .avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-position: center;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 14px;
+        }
+       span{
+        font-size: 14px;
+        font-weight: 500;
+       } 
+    }
 }
 
-.products__item-content {
-}
-.product__item-name {
-}
-.product__item-title {
-}
-.product__item-category {
-}
-.product__item-price {
-}
-.product__item-info {
-}
-.product__item-author {
-}
-.product__item-star {
-}
+.products__bottom-btn{
+    text-align: center;
+    button{
+        margin: 45px 5px 0;
+        box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+        border: none;
+        background-color: #fff;
+        color:$bg;
+        padding: 20px 30px;
+        cursor: pointer;
 
+        &.mixitup-control-active{
+            background-color: $red;
+            color: #fff;
+            outline: none;
+        }
+    }
+}
 
 // end product
+
