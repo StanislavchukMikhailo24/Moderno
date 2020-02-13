@@ -153,6 +153,9 @@
     flex-wrap: wrap;
 }
 
+.products_item-box{
+    padding-right: 30px;
+}
 .products__item {
     max-width: 442px;
     width: 100%;
@@ -360,3 +363,46 @@
 }
 
 // end advantades
+
+// start author
+
+
+.author{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-box{
+        max-width: 650px;
+        width: 100%;
+        min-height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green;
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 36px;
+        color:#fff;
+        margin-right: 45px;
+        max-width: 262px;
+
+        span{
+            @include f700;
+        }
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 36px;
+        background-color: #fff;
+        // width: 225px;
+        // height: 65px;
+        padding: 15px 40px;
+    }
+}
+// end author
