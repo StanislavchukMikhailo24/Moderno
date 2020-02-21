@@ -4,6 +4,11 @@
 
 // start header
 
+.header{
+    background-color: #fff;
+}
+
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -104,6 +109,7 @@
 }
 
 .basket{
+    margin-right: 20px;
     span{
         background-color: $green;
     }
@@ -125,7 +131,6 @@
     align-items: center;
 }
 .user{
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -193,6 +198,7 @@
     transition: all .3s;
     height: 0;
     overflow: hidden;
+    z-index: 7;
     
     a{
         font-size: 12px;
@@ -233,7 +239,7 @@
     overflow: hidden;
     transition: all .3s;
     width: 270px;
-    z-index: 1;
+    z-index: 6;
 }
 
 .notification__menu,
@@ -820,13 +826,23 @@
 }
 
 .footer__col-list {
-   a{ margin-bottom: 15px;
+   a{ 
+    margin-bottom: 15px;
     color:#fff;
     padding-left: 22px;
     &::before{
         font-size: 18px;
     }
    }
+   li{
+
+    &::before{
+        content: '\f105';
+        position: absolute;
+        font-family: 'icomoon';
+        color: #8bc34a;
+    }
+}
 }
 
 .footer__copy {
