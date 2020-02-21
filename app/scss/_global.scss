@@ -104,6 +104,20 @@ body{
    }
   a{
     color:#cbd4d8;
+   }
   }
+}
+
+
+.angle-right{
+  position: relative;
+  padding-left: 15px;
+  &::before{
+    position: absolute;
+    left: 0;
+    content: '\f105';
+    font-family: 'icomoon' !important;
+    font-size: 14px;
+    color:$green;
   }
 }
