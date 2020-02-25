@@ -50,8 +50,7 @@ $('.header__btn-menu').on('click', function(){
 
 
 if ($('.products__inner-box').length) {
-  var mixer = mixitup('.products__inner-box');
-}
+  var mixer = mixitup('.products__inner-box')};
 
 
 
