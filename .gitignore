@@ -1,7 +1,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-.package-lock.json
+.package-lock
 
 node_modules/
 app/css/
